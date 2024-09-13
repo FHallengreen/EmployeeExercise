@@ -22,7 +22,7 @@ public class EmployeeTest : IDisposable
     [InlineData("123456789!")]
     public void CprNumber_InvalidNumLengthOrChar(string number)
     {
-        // Arrange, Act & Assert
+        // Act & Assert
         Assert.Throws<ArgumentException>(() => _employee.SetCpr(number));
     }
 
