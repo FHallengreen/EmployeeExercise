@@ -6,34 +6,15 @@ namespace EmployeeExercise.Domain;
 
 public class Employee
 {
-    private string _cpr;
-    private string _firstName;
-    private string _lastName;
+    private string _cpr = null!;
+    private string _firstName = null!;
+    private string _lastName = null!;
     private Department _department;
     private double _baseSalary;
     private EducationalLevel _educationalLevel;
     private DateTime _dateOfBirth;
     private DateTime _employmentDate;
-    private string _country;
-
-    public Employee(string cpr, string firstName, string lastName, Department department, double baseSalary,
-        EducationalLevel educationalLevel, DateTime dateOfBirth, DateTime employmentDate, string country)
-    {
-        SetCpr(cpr);
-        SetFirstName(firstName);
-        SetLastName(lastName);
-        SetDepartment(department);
-        SetBaseSalary(baseSalary);
-        SetEducationLevel(educationalLevel);
-        SetBirthDate(dateOfBirth);
-        SetEmploymentDate(employmentDate);
-        SetCountry(country);
-    }
-
-    public Employee()
-    {
-    }
-
+    private string _country = null!;
 
     public string GetCpr()
     {
