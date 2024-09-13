@@ -23,7 +23,7 @@ public class Employee
         SetFirstName(firstName);
         SetLastName(lastName);
         SetDepartment(department);
-        SetBaseSalary((int)baseSalary);
+        SetBaseSalary(baseSalary);
         SetEducationLevel(educationalLevel);
         SetBirthDate(dateOfBirth);
         SetEmploymentDate(employmentDate);
