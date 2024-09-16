@@ -5,13 +5,9 @@ using JetBrains.Annotations;
 namespace EmployeeExercise.Service.Tests;
 
 [TestSubject(typeof(Employee))]
-public class EmployeeTest : IDisposable
+public class EmployeeTest
 {
     private readonly Employee _employee = new();
-
-    public void Dispose()
-    {
-    }
 
     [Theory]
     [InlineData("")]
